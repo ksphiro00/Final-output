@@ -1,0 +1,175 @@
+.navbar {
+    margin-bottom: 15px;
+    z-index: 1000;
+    padding: 5px;
+}
+
+.navbar-collapse{
+    transition: all .5s;
+}
+
+.navbar-brand{
+    padding: 5px;
+}
+
+.navbar-brand h1::first-letter{
+    font-size: 2rem;
+    color: #dc3545;
+}
+
+#naknam {
+    margin-bottom: 56px;
+}
+
+h1{
+
+    text-align: center;
+
+}
+
+.why{
+    padding: 50px;
+    text-align: center;
+    
+}
+
+.sa-baba{
+    padding: 50px;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+span{
+    color: #dc3545;
+}
+#portfolio{
+padding: 80px 0;
+background-color: white;
+margin: 30px;
+}
+/*---Project---*/
+.portfolio{
+padding: 50px 0;
+}
+.work-list{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+.work{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+.work img{
+width: 50%;
+border-radius: 10px;
+display: block;
+transition: transform 0.5s;
+}
+.layer{
+width: 55%;
+height: 0;
+background: linear-gradient(rgba(0,0,0,0.6), #000);
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+color: #fff;
+transition: height 0.7s;
+}
+.layer h3{
+font-weight: 500;
+margin-bottom: 20px;
+}
+.layer a{
+margin-top: 20px;
+color:#000;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background: #fff;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+text-align: center;
+}
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+height: 110%;
+}
+
+/*---Contact---*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    font-size: 18;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.Reserved{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #fff;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Final_Output_Portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95c8aa21f2.js" crossorigin="anonymous"></script>
+    <title>IssugyPortfolio</title>
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255, 255, 255, 0.9); border: solid 1px black;">
+    <div class="container-fluid">
+      <img src="https://drive.google.com/uc?export&download&id=1qAC1jDW2BWoUAilKkQe5Nk7Ko7SiqBnS
+      " class="brand-logo img-fluid">
+      <a class="navbar-brand" href="#"><span style="color: #ff69b4">Issugy</span>Assists</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Responsive_Webpage.html" target="_blank">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contacts">Contact</a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+<div id="header">
+</div>
+<!-- About Section -->
+<div id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Issugy.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates deserunt, error alias, asperiores ex excepturi veritatis molestiae neque, totam illum provident dolor rem quas tempore quos temporibus. Quasi, nostrum fugiat?</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links"onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links"onclick="opentab('education')"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Basic HTML</span><br> Web Development </li>
+                        <li><span>Basic CSS</span><br> Web Design </li>
+                        <li><span>Basic bootstrap</span><br> Responsiveness </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> 2022 May </span><br> Worked as an Assistant Secretary/Encoder <br>at City Hall Of Dasmariñas </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> Primary 2010-2016 </span><br> Nimesio I. Yabut Elementary School </li>
+                        <li><span> Secondary and Senior High 2017-2022 </span>
+                            <br> Paliparan National High School 
+                            <br> Paliparan III Senior Highschool
+                         </li>
+                        <li><span> Tertiary - Current </span><br> Kolehiyo ng Lungsod ng Dasmarañas </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container-fluid">
+        <h1 class="sub-title"> My Projects </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Issugy.jpg">
+                <div class="layer">
+                    <h3> Resposive Webpage </h3>
+                    <p> A basic webpage decorated with basic css, and bootsrap for responsiveness.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Issugy.jpg">
+                <div class="layer">
+                    <h3> Basic Responsive NavBar and Carousel </h3>
+                    <p> A basic Navigation Bar with hamburger button, and Carousel with indicators and controls, used bootsrap and css for design.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
